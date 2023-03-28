@@ -1,50 +1,26 @@
 <div data-cursor="-inverse" class="hero is-parallax-video is-fullheight">
 
     {{-- CONTAINER PARA GALENA E IMG DE GALENA --}}
-    <div style="
-      position: absolute;
-      display: block;
-      width: 100vw;
-      height: 100vh;
-      min-width: 768px;">
-    
-      <img src="@asset('images/galena_img.png')" alt="Galena AI" style="
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        height: 100vh;">
-    
+    <div class="_container-galena">
+      <img src="@asset('images/galena_img.png')" alt="Galena AI">
     </div>
 
     {{-- EFECTO DE SOMBRA INFERIOR PARA COMPLEMENTAR LA SECCION 2 --}}
-    <div class="sombra_inferior" style="
-        width: 100vw;
-        height: 60px;
-        position: absolute;
-        bottom: 0;
-        background: linear-gradient(0deg, #0e0f13 10%, rgba(0,0,0,0) 98%);">
-    </div>
+    <div class="_sombra-inferior"></div>
 
     {{-- FONDO EN GRADIENTE --}}
-    <div class="_galena-gradient hero-body columns mb-0">
+    <div class="_galena-gradient hero-body columns mb-0 p-0 is-flex align-items-flex-end">
 
-      <div class="column columns is-vcentered is-full" style="
-        margin-top: auto;
-        margin-bottom: 5%;">
+      <div class="column columns _sobre-galena is-vcentered is-full mb-6 is-multiline">
 
-        {{-- aqui va un z-index: 9; para pantallas touch --}}
-        <div class="column is-5">
+        <div class="column is-6-widescreen is-6-desktop is-12-touch pr-6" data-inertia data-inertia-reveal data-inertia-delay="600">
 
           {{-- MEET GALENA --}}
-          {{-- debo aumentar el tamaño al el doble al menos --}}
-          <p class="_is-size-extra-large has-text-right has-text-left-touch is-capitalized has-text-weight-bold">
+          <p class="_is-size-extra-large is-size-1-touch has-text-right has-text-left-touch is-capitalized has-text-weight-bold mr-5">
             <span class="_texto-degradado is-block">meet</span>
-            <span class="_texto-degradado is-block">galena</span>
+            <span class="_texto-degradado is-block _reduccion-entre-lineas">galena</span>
           </p>
-          <a href="#porpuse" class="_btn" style="
-            color: #ffffff;
-            float: right;
-            position: relative;">
+          <a href="#porpuse" class="_btn-down-circular is-hidden-touch" data-gravity data-cursor-stick>
             <svg xmlns="http://www.w3.org/2000/svg" width="90px" height="90px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5px" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle">
               <circle cx="12" cy="12" r="10"></circle>
               <polyline points="8 12 12 16 16 12"></polyline>
@@ -54,9 +30,9 @@
         </div>
 
         {{-- QUIEN ES GALENA? --}}
-        <div class="column is-2 is-offset-3 has-text-white">
+        <div class="column is-3 is-12-touch is-offset-4 is-offset-3-desktop is-offset-0-touch has-text-white" data-inertia data-inertia-reveal data-inertia-delay="900">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
-          <span class="is-size-7 has-text-left is-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex facere sapiente.</span>
+          <span class="is-size-5 has-text-left is-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex facere sapiente.</span>
         </div>
       </div>
 

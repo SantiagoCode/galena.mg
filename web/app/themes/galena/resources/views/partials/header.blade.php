@@ -1,28 +1,13 @@
-{{-- <nav class="navbar is-fixed-top is-spaced is-white vertical-header" role="navigation" data-cursor-stick data-cursor="-menu">
-  <a href="{{home_url()}}" class="name is-size-7 has-text-dark"
-    style="writing-mode: vertical-lr;
-    transform: rotate(180deg);">
-    <span>Amerinode <b>Latam</b></span>
+<nav class="navbar p-6 m-3 mb-0">
+  <a href="#" class="navbar-item" data-gravity data-cursor-stick>
+    <img src="@asset('images/mg.png')" alt="mg">
   </a>
-  <div class="menu-trigger">
-    <a id="open_menu" class="icon has-text-dark"><i data-feather="menu"></i></a>
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <a href="#" class="navbar-item" data-gravity data-cursor-stick>
+        <span class="mx-2">Follow her</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+    </div>
   </div>
-  <div class="call-to-action is-size-7 has-text-grey"
-    style="writing-mode: vertical-lr;
-    transform: rotate(180deg);">
-    <span clas="icon"><i data-feather="chevron-up"></i></span>
-    <span>Scroll</span>
-  </div>
-</nav> --}}
-
-
-
-
-{{-- 
-
-  ACA VA TODA LA NAVEGACION
-  - NECESITA UNA NAVEGACION TRANSPARENTE Y STICKY
-  - SIN NAVBURGER
-  - MOBILE SOLO CON EL LIGO DE MG Y GALENA.AI
-
---}}
+</nav>

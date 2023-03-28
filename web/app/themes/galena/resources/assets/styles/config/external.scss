@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import '~bulma';
 @import '~bulma-helpers';
-
+@font-face {
+    font-family: "gojali";
+    src: url("./../fonts/Gojali-Regular.otf");
+  }
+  
 /** Solar */
 
 @import './solar.scss';
@@ -23,6 +27,11 @@
     font-family: $body-family;
 }
 
+span, p {
+    line-height: 135%;
+    letter-spacing: 1px;
+}
+
 strong {
     color: $dark !important;
 }
@@ -32,17 +41,128 @@ strong {
 }
 
 ._is-size-extra-large {
-    font-size: 6rem;
+    font-size: 10rem;
 }
 
-// HERO
+// 
+// ------    HEADER    ------
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar-item {
+    background-color: transparent;
+    color: #ffffff
+}
+
+a.navbar-item:focus, a.navbar-item:focus-within {
+    background-color: transparent !important;
+    color: #ffffff; 
+}
+
+// 
+// ------    HERO    ------
 ._galena-gradient {
     background: radial-gradient(circle, #382515 -70%, #0e0f13 88%)
 }
 
+._container-galena {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    min-width: 768px;
+    z-index: 9;
+}
+
+._container-galena img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 100vh;
+    object-fit: cover;
+}
+
+._sombra-inferior {
+    width: 100vw;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, #0e0f13 10%, rgba(0,0,0,0) 98%);
+    z-index: 999;
+}
+
+._sobre-galena {
+    z-index: 0;
+}
+
+._btn-down-circular {
+    color: #ffffff;
+    float: right;
+    position: relative;
+}
+
 ._texto-degradado {
-    background: -webkit-linear-gradient(20deg, #ffffff 60%, #5a5454 100%);
+    background: -webkit-linear-gradient(-33deg, #ffffff 42%, #5a5454 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #ffffff;  
+}
+
+._texto-degradado._reduccion-entre-lineas {
+    margin-top: -85px;
+}
+
+// 
+// ------    PORPUSE    ------
+._porpuse-container {
+    min-height: 60vh;
+    padding: 10vh 0;
+}
+
+._ancester {
+    max-height: 800px;
+}
+
+// 
+// ------    ANOTHERPICTURE    ------
+._galena2-background {
+    background: url('./../images/galena_img_2.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top, center;
+}
+
+// 
+// ------    GALLERY    ------
+
+// 
+// ------    FOOTHER    ------
+
+
+
+// ...........................................
+// @@@@@@   RESPONSIVE / MEDIAQUERYS    @@@@@@
+@media only screen and (max-width: 1024px) {
+
+    // 
+    // ------    NAVBAR    ------
+    .navbar {
+        padding: 1rem !important;
+        margin: 0 !important;
+    }
+
+    // 
+    // ------    HERO    ------
+    ._sobre-galena {
+        z-index: 99;
+        padding: 0px 30px !important;
+    }
+
+    ._texto-degradado._reduccion-entre-lineas {
+        margin-top: 0;
+    }
 }
