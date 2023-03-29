@@ -6,6 +6,7 @@
     @include('partials.porpuse')
     @include('partials.anotherpicture')
     @include('partials.gallery')
+    @include('partials.footer')
 
 {{-- @include('partials.intro') --}}
 @endsection

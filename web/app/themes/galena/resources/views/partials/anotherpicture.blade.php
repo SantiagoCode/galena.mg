@@ -2,7 +2,7 @@
     <div class="_galena2-background columns is-flex is-align-items-end p-6" data-cursor-img="@asset('images/galena_img_2.png')">
 
         <div class="_gallery column is-1 is-offset-1">
-            <a href="#" class="_gallery is-capitalized has-text-light">gallery</a>
+            <a href="#" class="_gallery is-capitalized has-text-light _hover-transform">gallery</a>
         </div>
 
         {{-- ADRIAN 2023 --}}

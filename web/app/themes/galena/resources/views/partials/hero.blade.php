@@ -9,31 +9,41 @@
     <div class="_sombra-inferior"></div>
 
     {{-- FONDO EN GRADIENTE --}}
-    <div class="_galena-gradient hero-body columns mb-0 p-0 is-flex align-items-flex-end">
+    <div class="_galena-gradient hero-body mb-0 p-0 is-flex align-items-flex-end">
 
-      <div class="column columns _sobre-galena is-vcentered is-full mb-6 is-multiline">
 
-        <div class="column is-6-widescreen is-6-desktop is-12-touch pr-6" data-inertia data-inertia-reveal data-inertia-delay="600">
 
-          {{-- MEET GALENA --}}
-          <p class="_is-size-extra-large is-size-1-touch has-text-right has-text-left-touch is-capitalized has-text-weight-bold mr-5">
-            <span class="_texto-degradado is-block">meet</span>
-            <span class="_texto-degradado is-block _reduccion-entre-lineas">galena</span>
-          </p>
-          <a href="#porpuse" class="_btn-down-circular is-hidden-touch" data-gravity data-cursor-stick>
-            <svg xmlns="http://www.w3.org/2000/svg" width="90px" height="90px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5px" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="8 12 12 16 16 12"></polyline>
-              <line x1="12" y1="8" x2="12" y2="16"></line>
-            </svg>
-          </a>
+      <div class="_sobre-galena is-vcentered is-full mb-6 is-multiline">
+        <div class="_caja-1">
+          <div class="is-6-widescreen is-6-desktop is-12-touch pr-6">
+  
+            {{-- MEET GALENA --}}
+            <p class="_is-size-extra-large has-text-right has-text-left-touch is-capitalized has-text-weight-bold mr-5">
+              <span class="_texto-degradado is-block">
+                meet
+              </span>
+              <span class="_texto-degradado is-block _reduccion-entre-lineas">
+                galena
+              </span>
+            </p>
+          </div>
+        </div>
+        <a href="#porpuse" class="_btn-down-circular is-hidden-touch" data-gravity data-cursor-stick>
+          <svg class="_hover-transform" xmlns="http://www.w3.org/2000/svg" width="90px" height="90px" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.5px" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="8 12 12 16 16 12"></polyline>
+            <line x1="12" y1="8" x2="12" y2="16"></line>
+          </svg>
+        </a>
+        
+        {{-- QUIEN ES GALENA? --}} 
+        <div class="_caja-2">
+          <div class="is-3 is-12-touch is-offset-4 is-offset-3-desktop is-offset-0-touch has-text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
+            <span class="is-size-5-fullhd has-text-left is-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex facere sapiente.</span>
+          </div>
         </div>
 
-        {{-- QUIEN ES GALENA? --}}
-        <div class="column is-3 is-12-touch is-offset-4 is-offset-3-desktop is-offset-0-touch has-text-white" data-inertia data-inertia-reveal data-inertia-delay="900">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
-          <span class="is-size-5 has-text-left is-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex facere sapiente.</span>
-        </div>
       </div>
 
 
