@@ -1,24 +1,24 @@
-<div data-cursor="-inverse" class="hero is-parallax-video is-fullheight">
+<div data-cursor="-inverse" class="hero is-fullheight is-clipped is-relative">
 
     {{-- CONTAINER PARA GALENA E IMG DE GALENA --}}
-    <div class="_container-galena">
-      <img src="@asset('images/galena_img.png')" alt="Galena AI">
+    <div class="_container-galena" data-inertia data-inertia-speed="-4">
+      <img src="@asset('images/galena_img.png')" alt="Galena AI" data-inertia data-inertia-reveal="1200">
     </div>
 
     {{-- EFECTO DE SOMBRA INFERIOR PARA COMPLEMENTAR LA SECCION 2 --}}
     <div class="_sombra-inferior"></div>
 
     {{-- FONDO EN GRADIENTE --}}
-    <div class="_galena-gradient hero-body mb-0 p-0 is-flex align-items-flex-end">
+    <div class="_galena-gradient hero-body">
 
 
 
-      <div class="_sobre-galena is-vcentered is-full mb-6 is-multiline">
+      <div class="_sobre-galena is-vcentered is-full mb-6">
         <div class="_caja-1">
-          <div class="is-6-widescreen is-6-desktop is-12-touch pr-6">
+          <div class="pr-6">
   
             {{-- MEET GALENA --}}
-            <p class="_is-size-extra-large has-text-right has-text-left-touch is-capitalized has-text-weight-bold mr-5">
+            <p class="_is-size-extra-large has-text-right has-text-left-touch is-capitalized has-text-weight-bold mr-5" data-inertia data-inertia-reveal="600">
               <span class="_texto-degradado is-block">
                 meet
               </span>
@@ -38,7 +38,7 @@
         
         {{-- QUIEN ES GALENA? --}} 
         <div class="_caja-2">
-          <div class="is-3 is-12-touch is-offset-4 is-offset-3-desktop is-offset-0-touch has-text-white">
+          <div class="has-text-white" data-inertia data-inertia-reveal="900">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
             <span class="is-size-5-fullhd has-text-left is-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex facere sapiente.</span>
           </div>

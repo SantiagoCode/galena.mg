@@ -3,7 +3,7 @@
 @section('content')
 
     @include('partials.hero')
-    @include('partials.porpuse')
+    @include('partials.purpose')
     @include('partials.anotherpicture')
     @include('partials.gallery')
     @include('partials.footer')
