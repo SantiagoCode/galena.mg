@@ -1,6 +1,5 @@
 <div id="porpuse" class="container _porpuse-container is-flex">
 
-    {{-- hay que hacerle un @mediaquery para el touch y poner height: 100vh; display: flex; align-items: center; --}}
     <div class="columns is-multiline _ancester">
 
         {{-- columna de la izquierda - galena y Movidagrafica --}}
@@ -8,18 +7,21 @@
             <div class="_mini-container" data-inertia data-inertia-reveal data-inertia-delay="400">
                 <div class="titulo">
                     <span class="has-text-danger is-capitalized is-size-7">
-                        galena
+                        {!!get_field('purpose_titulo_izq', 'options')!!}
                     </span>
                 </div>
                 <p class="has-text-light is-capitalized is-size-4 is-size-6-touch my-4">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem error id voluptatem consequuntur blanditiis odio minus eos.
+                    {!!get_field('purpose_contenido_izq', 'options')!!}
                 </p>
-                <div data-gravity data-cursor-stick>
-                    <a class="about is-flex is-align-items-center has-text-light">
+                <div>
+                    @set($btn_link_left, get_field('purpose_btn_izq', 'options'))
+                    <a href="{{$btn_link_left['url']}}" class="about is-flex is-align-items-center has-text-light" data-cursor-stick>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
                             <circle cx="12" cy="12" r="10"></circle>
                         </svg>
-                        <span class="has-text-light is-capitalized is-size-7 mx-4">about the company</span>
+                        <span class="has-text-light is-capitalized is-size-7 mx-4">
+                            {{$btn_link_left['title']}}
+                        </span>
                     </a>
                 </div>
             </div>
@@ -30,23 +32,26 @@
             <div class="_mini-container" data-inertia data-inertia-reveal data-inertia-delay="700">
                 <div class="titulo">
                     <span class="has-text-danger is-capitalized is-size-7">
-                        galena
+                        {!!get_field('purpose_titulo_derecha', 'options')!!}
                     </span>
                 </div>
                 <p class="has-text-light is-capitalized is-size-4 is-size-6-touch my-4">
                     <span class="_parrafo-B is-block">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem error id voluptatem consequuntur blanditiis odio minus eos commodi.
+                        {!!get_field('purpose_contenido_derecha_parrafo_1', 'options')!!}
                     </span>
                     <br>
                     <span class="_parrafo-B is-block">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat et totam pariatur, dolorem explicabo sit ducimus? Deleniti, perspiciatis quasi earum quidem eum nobis.
+                        {!!get_field('purpose_contenido_derecha_parrafo_2', 'options')!!}
                     </span>
                 </p>
-                <a class="about is-flex is-align-items-center has-text-light">
+                @set($btn_link_right, get_field('purpose_btn_izq', 'options'))
+                <a href="{{$btn_link_right['url']}}" class="about is-flex is-align-items-center has-text-light" data-cursor-stick>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
                         <circle cx="12" cy="12" r="10"></circle>
                     </svg>
-                    <span class="has-text-light is-capitalized is-size-7 mx-4">about the company</span>
+                    <span class="has-text-light is-capitalized is-size-7 mx-4">
+                        {{$btn_link_right['title']}}
+                    </span>
                 </a>
             </div>
         </div>

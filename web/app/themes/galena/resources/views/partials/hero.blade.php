@@ -1,8 +1,7 @@
 <div data-cursor="-inverse" class="hero is-fullheight is-clipped is-relative">
-
     {{-- CONTAINER PARA GALENA E IMG DE GALENA --}}
     <div class="_container-galena" data-inertia data-inertia-speed="-4">
-      <img src="@asset('images/galena_img.png')" alt="Galena AI" data-inertia data-inertia-reveal="1200">
+      <img src="{!!get_field('foto_de_galena', 'options')!!}" alt="Galena AI" data-inertia data-inertia-reveal="1200">
     </div>
 
     {{-- EFECTO DE SOMBRA INFERIOR PARA COMPLEMENTAR LA SECCION 2 --}}
@@ -20,10 +19,10 @@
             {{-- MEET GALENA --}}
             <p class="_is-size-extra-large has-text-right has-text-left-touch is-capitalized has-text-weight-bold mr-5" data-inertia data-inertia-reveal="600">
               <span class="_texto-degradado is-block">
-                meet
+                {!!get_field('conoce_a_galena_a', 'options')!!}
               </span>
               <span class="_texto-degradado is-block _reduccion-entre-lineas">
-                galena
+                {!!get_field('conoce_a_galena_b', 'options')!!}
               </span>
             </p>
           </div>
@@ -40,10 +39,11 @@
         <div class="_caja-2">
           <div class="has-text-white" data-inertia data-inertia-reveal="900">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
-            <span class="is-size-5-fullhd has-text-left is-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex facere sapiente.</span>
+            <span class="is-size-5-fullhd has-text-left is-block">
+              {!!get_field('quien_es_galena', 'options')!!}
+            </span>
           </div>
         </div>
-
       </div>
 
 
