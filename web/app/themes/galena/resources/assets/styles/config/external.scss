@@ -207,8 +207,10 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     height: 50vw;
     background-position: right !important;
 }
+
 // 
 // ------    FOOTHER    ------
+
 ._premios {
     transition: 0.6s;
     filter: grayscale(100%);
@@ -219,7 +221,44 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     filter: grayscale(0%);
 }
 
-//
+// 
+// ------    NEWSLETTER & ANIMATIONS    ------
+
+[data-newsletter] {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.6s;
+}
+
+[data-newsletter]._newsletter-animation {
+    transition: 0.6s;
+    pointer-events: all !important;
+    opacity: 1 !important;
+}
+
+.formularie {
+    z-index: 9;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+    display: flex !important;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(circle, #382515 0%, #0e0f13 88%);
+    box-shadow: 0px 0px 45px #382515;
+}
+
+
+
+
+
+
 //
 //
 //
@@ -234,6 +273,7 @@ a.navbar-item:focus, a.navbar-item:focus-within {
 //
 // ...........................................
 // @@@@@@   RESPONSIVE / MEDIAQUERYS    @@@@@@
+
 @media only screen and (max-width: 1023px) {
     ._caja-1 {
         left: 20px;
