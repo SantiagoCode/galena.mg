@@ -145,6 +145,20 @@ add_action( 'pre_get_posts', function( $query ){
     }
 } );
 
+add_action( 'wp_ajax_procesar_formulario', function(){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    var_dump($name);
+    var_dump($email);
+} );
+
+add_action( 'wp_ajax_nopriv_procesar_formulario', function(){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    var_dump("Name: " . $name);
+    var_dump("Email: " . $email);
+} );
+
 //the_breadcrumb
 include('Setup/breadcrumbs.php');
 //Mailer-3000

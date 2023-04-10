@@ -1,5 +1,4 @@
-<div id="porpuse" class="container _porpuse-container is-flex">
-
+<div id="purpose" class="container _porpuse-container is-flex">
     <div class="columns is-multiline _ancester">
 
         {{-- columna de la izquierda - galena y Movidagrafica --}}

@@ -16,38 +16,39 @@ export default {
       nl.classList.remove("_newsletter-animation");
 
       setTimeout(() => {
-        let _inputName = document.querySelector("[type=text]").value = "";
-        let _inputEmail = document.querySelector("[type=email]").value = "";
+        document.querySelector("[type=text]").value = "";
+        document.querySelector("[type=email]").value = "";
       }, 600);
     });
 
+
     // data submit
-    let _btnSubmit = document.querySelector("[type=submit]");
+    let btnSubmit = document.querySelector(".btnSubmit");
 
     const upload = (arg) => {
-      fetch('', {
+    
+      console.log("arg ",arg);
+
+      fetch('http://galena.v2.test/wp/wp-admin/admin-ajax.php', {
         method: 'POST',
-        body: arg
-      }).then(
-        response => response.json()
-      ).then(
-        success => console.log(success)
-      ).catch(
-        error => console.log(error)
-      );
+        body: arg,
+        mode: 'no-cors',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+      })
+      .then(response => {console.log(response)})
+      .catch(error => console.error(error))    
     };
 
-    _btnSubmit.addEventListener("click", function(e){
+    btnSubmit.addEventListener("click", (e) => {
       e.preventDefault();
-      var _inputName = document.querySelector("[type=text]").value;
-      var _inputEmail = document.querySelector("[type=email]").value;
 
-      var _message = new FormData();
-      _message.append("name", _inputName);
-      _message.append("name", _inputEmail);
+      const form = document.querySelector("#newsletterForm");
+      let data = new FormData(form);
 
-      upload(_message);
-    });
+      console.log("data ", data);
+
+      upload(data);
+    });  
     },
     
 
