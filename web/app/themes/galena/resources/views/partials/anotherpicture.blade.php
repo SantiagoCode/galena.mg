@@ -1,6 +1,8 @@
 <div class="" style="overflow: hidden; height: 100vh">
 
-    <div class="_galena2-background"></div>
+    <div class="_galena2-background is-clipped">
+        <img src="{!!get_field('another_image', 'options')!!}" class="is-full-width is-block" alt="img">
+    </div>
 
     <div class="container is-fullhd is-flex is-full-height">
         <div class="columns is-flex is-align-items-end p-6">

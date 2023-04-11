@@ -62,6 +62,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     color: #ffffff !important;
 }
 
+
 // 
 // ------    HEADER    ------
 .navbar {
@@ -79,6 +80,7 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     background-color: transparent !important;
     color: #ffffff; 
 }
+
 
 // 
 // ------    HERO    ------
@@ -143,11 +145,13 @@ a.navbar-item:focus, a.navbar-item:focus-within {
 
 ._texto-degradado {
     background: -webkit-linear-gradient(-33deg, #ffffff 42%, #5a5454 100%);
+    padding-top: 10px;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #ffffff;  
 }
+
 
 // 
 // ------    PORPUSE    ------
@@ -170,27 +174,20 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     font-size: 1rem !important;
 }
 
+
 // 
 // ------    ANOTHERPICTURE    ------
 ._galena2-background {
     height: 100vh;
     width: 100%;
     position: absolute;
-    background: url('./../images/galena_img_2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top, center;
 }
+
 
 // 
 // ------    GALLERY    ------
 
 ._galena-collection {
-    // height: 25vw;
-    // background: url('./../images/gallery_images/galena1.png');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
     background-position: top, center !important;
     min-height: 200px !important;
 }
@@ -199,6 +196,17 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     height: 50vw;
     background-position: right !important;
 }
+
+._galena-collection img {
+    transition: 0.6s;
+    transform: scale(1);
+}
+
+._galena-collection img:hover {
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+
 
 // 
 // ------    FOOTHER    ------
@@ -213,8 +221,9 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     filter: grayscale(0%);
 }
 
+
 // 
-// ------    NEWSLETTER & ANIMATIONS    ------
+// ------    NEWSLETTER    ------
 
 [data-newsletter] {
     width: 100vw;
@@ -301,7 +310,13 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     }
 }
 
-// RESCRIBIENDO CLASES BULMA
+// 
+// 
+// 
+// 
+// 
+// 
+// RESCRIBIENDO CLASES BULMA EN RESPONSIVE
 @media screen and (min-width: 1216px){
     .column.is-2-widescreen {
         flex: none !important;

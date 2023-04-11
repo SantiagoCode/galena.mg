@@ -28,6 +28,8 @@ export default {
     const upload = (arg) => {
     
       console.log("arg ",arg);
+      console.log(arg["name"]);
+      console.log(arg["email"]);
 
       fetch('http://galena.v2.test/wp/wp-admin/admin-ajax.php', {
         method: 'POST',
@@ -46,9 +48,22 @@ export default {
       let data = new FormData(form);
 
       console.log("data ", data);
+      console.log(data["name"]);
+      console.log(data["email"]);
+
 
       upload(data);
-    });  
+    }); 
+    
+    
+    // a new effect (fade effect)    
+    // const miniImages = document.querySelectorAll("[data-switch]");
+    // miniImages.forEach(img => {
+    //   img.addEventListener("touchstart", (e) => {
+    //     console.log(e.target.attributes[0].nodeValue);
+    //   });
+    // });
+    
     },
     
 
