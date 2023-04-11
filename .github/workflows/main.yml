@@ -11,7 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: www.galena.movida.company
+        server: ftp.movida.company
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-div: /production.galena.movida.company/
