@@ -28916,6 +28916,10 @@ a.navbar-item:focus, a.navbar-item:focus-within {
   color: #ffffff;
 }
 
+._sobre-galena {
+  pointer-events: none;
+}
+
 ._caja-1 {
   z-index: 0;
   position: absolute;
@@ -28983,6 +28987,11 @@ a.navbar-item:focus, a.navbar-item:focus-within {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #ffffff;
+}
+
+.-flare {
+  box-shadow: 10px 10px 300px 79px #382515;
+  transition: box-shadow 1s;
 }
 
 ._porpuse-container {
@@ -29096,6 +29105,7 @@ a.navbar-item:focus, a.navbar-item:focus-within {
 
   ._sobre-galena {
     padding: 0px 30px !important;
+    pointer-events: none;
   }
 }
 @media screen and (min-width: 1216px) {

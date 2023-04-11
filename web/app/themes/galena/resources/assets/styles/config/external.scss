@@ -84,6 +84,10 @@ a.navbar-item:focus, a.navbar-item:focus-within {
 
 // 
 // ------    HERO    ------
+._sobre-galena {
+    pointer-events: none;
+}
+
 ._caja-1 {
     z-index: 0;
     position: absolute;
@@ -150,6 +154,13 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #ffffff;  
+}
+
+.-flare {
+    -webkit-box-shadow: 10px 10px 300px 79px #382515;
+    -moz-box-shadow: 10px 10px 300px 79px #382515;
+    box-shadow: 10px 10px 300px 79px #382515;
+    transition: box-shadow 1s;
 }
 
 
@@ -256,10 +267,6 @@ a.navbar-item:focus, a.navbar-item:focus-within {
 }
 
 
-
-
-
-
 //
 //
 //
@@ -307,8 +314,10 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     // ------    HERO    ------
     ._sobre-galena {
         padding: 0px 30px !important;
+        pointer-events: none;
     }
 }
+
 
 // 
 // 

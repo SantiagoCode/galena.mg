@@ -1,9 +1,9 @@
 <div data-cursor="-inverse" class="hero is-fullheight is-clipped is-relative">
     {{-- CONTAINER PARA GALENA E IMG DE GALENA --}}
     <div class="_container-galena" data-inertia data-inertia-speed="-4">
-      <img src="{!!get_field('foto_de_galena', 'options')!!}" alt="Galena AI" data-inertia data-inertia-reveal="1200"> 
+      <img src="{!!get_field('foto_de_galena', 'options')!!}" alt="Galena AI" data-inertia data-inertia-reveal="1200" data-cursor="-flare"> 
     </div>
-
+    
     {{-- EFECTO DE SOMBRA INFERIOR PARA COMPLEMENTAR LA SECCION 2 --}}
     <div class="_sombra-inferior"></div>
 
