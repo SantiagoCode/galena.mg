@@ -89,7 +89,7 @@
       <div class="columns is-multiline is-centered mx-6">
         @fields('footer_premios', 'options')
         <a href="" class="column is-6 is-2-widescreen _premios p-0">
-          <img src="@sub('img')" class="is-block m-auto" alt="guru">
+          <img src="@sub('img')" class="is-block m-auto" alt="guru"> 
         </a>
         @endfields
       </div>
