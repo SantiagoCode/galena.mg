@@ -28841,7 +28841,7 @@ table.is-completely-borderless tr {
   direction: ltr;
   contain: layout style size;
   pointer-events: none;
-  transition: opacity 0.3s, color 0.4s;
+  transition: opacity 0.3s, color 0.4s, box-shadow 1s;
 }
 .satellite-cursor:before {
   content: "";
@@ -29175,16 +29175,13 @@ a.navbar-item:focus, a.navbar-item:focus-within {
   color: #ffffff;
 }
 
-._sobre-galena {
-  pointer-events: none;
-}
-
 ._caja-1 {
   z-index: 0;
   position: absolute;
   bottom: 14%;
   left: 30%;
   transform: translateX(-65%) !important;
+  pointer-events: none;
 }
 
 ._caja-2 {
@@ -29194,6 +29191,7 @@ a.navbar-item:focus, a.navbar-item:focus-within {
   right: 18%;
   transform: translateX(60%) !important;
   width: 340px;
+  pointer-events: none;
 }
 
 ._caja-1 div, ._caja-2 div {
@@ -29364,7 +29362,6 @@ a.navbar-item:focus, a.navbar-item:focus-within {
 
   ._sobre-galena {
     padding: 0px 30px !important;
-    pointer-events: none;
   }
 }
 @media screen and (min-width: 1216px) {
