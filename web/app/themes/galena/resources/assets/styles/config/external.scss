@@ -69,7 +69,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     position: fixed;
     width: 100%;
     background-color: transparent;
-    mix-blend-mode: luminosity;
+    mix-blend-mode: color-dodge;
 }
 
 .navbar-item {
