@@ -1,8 +1,9 @@
+# Dotenv environment variables files
+.env
+
 # Logs
 *.log
 
 # WP-CLI
 wp-cli.local.yml
 
-# Añadidas por Santiago
-/.env
