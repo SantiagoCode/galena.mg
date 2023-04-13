@@ -459,7 +459,6 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
-  overflow: hidden;
 }
 
 a {
@@ -28842,6 +28841,8 @@ table.is-completely-borderless tr {
   direction: ltr;
   contain: layout style size;
   pointer-events: none;
+  mix-blend-mode: plus-lighter;
+  box-shadow: 5px 5px 200px 40px #673f1f75;
   transition: opacity 0.3s, color 0.4s, box-shadow 1s;
 }
 .satellite-cursor:before {
@@ -29164,6 +29165,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   position: fixed;
   width: 100%;
   background-color: transparent;
+  mix-blend-mode: luminosity;
 }
 
 .navbar-item {
@@ -29218,7 +29220,6 @@ a.navbar-item:focus, a.navbar-item:focus-within {
   display: block;
   width: 100vw;
   height: 100vh;
-  min-width: 768px;
 }
 
 ._container-galena img {

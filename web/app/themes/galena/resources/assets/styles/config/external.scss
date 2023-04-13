@@ -69,6 +69,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     position: fixed;
     width: 100%;
     background-color: transparent;
+    mix-blend-mode: luminosity;
 }
 
 .navbar-item {
@@ -126,7 +127,6 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     display: block;
     width: 100vw;
     height: 100vh;
-    min-width: 768px;
 }
 
 ._container-galena img {

@@ -13,6 +13,8 @@ $satellite-color-text:#fff !default;
     contain:layout style size;
     pointer-events:none;
 
+    mix-blend-mode: plus-lighter;
+    box-shadow: 5px 5px 200px 40px #673f1f75;
     transition: opacity 0.3s, color 0.4s, box-shadow 1s;
 
     &:before {
