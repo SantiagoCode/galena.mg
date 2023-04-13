@@ -1,4 +1,4 @@
-<div class="hero is-light is-fullheight">
+{{-- <div class="hero is-light is-fullheight">
   <div class="is-overlay columns is-mobile">
     <div class="column is-3 is-offset-9 has-background-white" style="height: 100%"></div>
   </div>
@@ -81,4 +81,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}

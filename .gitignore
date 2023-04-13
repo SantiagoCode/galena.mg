@@ -3,3 +3,6 @@
 
 # WP-CLI
 wp-cli.local.yml
+
+# Añadidas por Santiago
+.env

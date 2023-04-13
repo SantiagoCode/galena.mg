@@ -1,4 +1,4 @@
-<div id="full_menu" class="full-menu is-overlay is-disabled" style="z-index: 9">
+{{-- <div id="full_menu" class="full-menu is-overlay is-disabled" style="z-index: 9">
   <div class="hero is-fullheight is-dark">
     <div class="is-overlay" style="mix-blend-mode: lighten">
       <div class="fibra-optica column is-3 is-paddingless is-offset-9">
@@ -40,9 +40,9 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}
 
-<script>
+{{-- <script>
   const menu = document.querySelector('#full_menu');
   const trigger = document.querySelector('#open_menu');
 
@@ -64,4 +64,4 @@
   })
 
   if(!menu.classList.contains('is-disabled')) document.querySelectorAll('a').forEach(element=> { element.onclick = () => {menu_action()} })
-</script>
+</script> --}}

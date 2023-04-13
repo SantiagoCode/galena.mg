@@ -9,20 +9,18 @@
                         {!!get_field('purpose_titulo_izq', 'options')!!}
                     </span>
                 </div>
-                <p class="has-text-light is-capitalized is-size-4 is-size-6-touch my-4">
+                <p class="has-text-light is-capitalized is-size-4 is-size-6-touch has-margin-top-40 has-margin-bottom-40">
                     {!!get_field('purpose_contenido_izq', 'options')!!}
                 </p>
-                <div>
-                    @set($btn_link_left, get_field('purpose_btn_izq', 'options'))
-                    <a href="{{$btn_link_left['url']}}" class="about is-flex is-align-items-center has-text-light" data-cursor-stick>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
-                            <circle cx="12" cy="12" r="10"></circle>
-                        </svg>
-                        <span class="has-text-light is-capitalized is-size-7 mx-4">
-                            {{$btn_link_left['title']}}
-                        </span>
-                    </a>
-                </div>
+                @set($btn_link_left, get_field('purpose_btn_izq', 'options'))
+                <a href="{{$btn_link_left['url']}}" class="about is-flex is-align-items-center has-text-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    <span class="has-text-light is-capitalized is-size-7 has-margin-left-40 has-margin-right-40" data-gravity data-cursor-stick>
+                        {{$btn_link_left['title']}}
+                    </span>
+                </a>
             </div>
         </div>
 
@@ -34,7 +32,7 @@
                         {!!get_field('purpose_titulo_derecha', 'options')!!}
                     </span>
                 </div>
-                <p class="has-text-light is-capitalized is-size-4 is-size-6-touch my-4">
+                <p class="has-text-light is-capitalized is-size-4 is-size-6-touch has-margin-top-40 has-margin-bottom-40">
                     <span class="_parrafo-B is-block">
                         {!!get_field('purpose_contenido_derecha_parrafo_1', 'options')!!}
                     </span>
@@ -44,11 +42,11 @@
                     </span>
                 </p>
                 @set($btn_link_right, get_field('purpose_btn_izq', 'options'))
-                <a href="{{$btn_link_right['url']}}" class="about is-flex is-align-items-center has-text-light" data-cursor-stick>
+                <a href="{{$btn_link_right['url']}}" class="about is-flex is-align-items-center has-text-light">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
                         <circle cx="12" cy="12" r="10"></circle>
                     </svg>
-                    <span class="has-text-light is-capitalized is-size-7 mx-4">
+                    <span class="has-text-light is-capitalized is-size-7 has-margin-left-40 has-margin-right-40"  data-gravity data-cursor-stick>
                         {{$btn_link_right['title']}}
                     </span>
                 </a>

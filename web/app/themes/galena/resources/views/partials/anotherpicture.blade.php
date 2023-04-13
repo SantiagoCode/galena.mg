@@ -1,5 +1,4 @@
 <div class="" style="overflow: hidden; height: 100vh">
-
     <div class="_galena2-background is-clipped">
         <img src="{!!get_field('another_image', 'options')!!}" class="is-full-width is-block" alt="img">
     </div>

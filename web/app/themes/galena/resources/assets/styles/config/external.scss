@@ -173,6 +173,10 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     max-height: 800px;
 }
 
+._mini-container {
+    overflow: initial;
+}
+
 ._mini-container .titulo span {
     transition: 0.3s;
 }
@@ -264,6 +268,9 @@ a.navbar-item:focus, a.navbar-item:focus-within {
     box-shadow: 0px 0px 45px #382515;
 }
 
+._boton-group {
+    overflow: initial;
+}
 
 //
 //
@@ -296,6 +303,11 @@ a.navbar-item:focus, a.navbar-item:focus-within {
 
     ._is-size-extra-large {
         font-size: 13vh !important;
+    }
+
+    ._galena2-background img{
+        object-fit: cover;
+        height: 100%;
     }
 }
 

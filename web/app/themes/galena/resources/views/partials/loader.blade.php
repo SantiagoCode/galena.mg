@@ -1,6 +1,6 @@
 <div class="preloader">
 
-  <div class="logo"><img src="@asset('images/logo-primary.png')" width="200px" alt="" /></div>
+  {{-- <div class="logo"><img src="@asset('images/logo-primary.png')" width="200px" alt="" /></div> --}}
 
 </div>
 

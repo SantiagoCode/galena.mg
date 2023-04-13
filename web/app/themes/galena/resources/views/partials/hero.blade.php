@@ -12,12 +12,12 @@
 
 
 
-      <div class="_sobre-galena is-vcentered is-full mb-6">
+      <div class="_sobre-galena is-vcentered is-full has-margin-bottom-60">
         <div class="_caja-1">
-          <div class="pr-6">
+          <div class="has-padding-right-60" data-inertia  data-inertia-speed="-3">
   
             {{-- MEET GALENA --}}
-            <p class="_is-size-extra-large has-text-right has-text-left-touch is-capitalized has-text-weight-bold mr-5" data-inertia data-inertia-reveal="600">
+            <p class="_is-size-extra-large has-text-right has-text-left-touch is-capitalized has-text-weight-bold has-margin-right-50" data-inertia data-inertia-reveal="600">
               <span class="_texto-degradado is-block">
                 {!!get_field('conoce_a_galena_a', 'options')!!}
               </span>
@@ -38,13 +38,13 @@
         </a>
         
         {{-- QUIEN ES GALENA? --}} 
-        <div class="_caja-2">
-          <div class="has-text-white" data-inertia data-inertia-reveal="900">
+        <div class="_caja-2"  data-inertia  data-inertia-speed="-3">
+          <p class="has-text-white" data-inertia data-inertia-reveal="900">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>
             <span class="is-size-5-fullhd has-text-left is-block">
               {!!get_field('quien_es_galena', 'options')!!}
             </span>
-          </div>
+          </p>
         </div>
       </div>
     </div>
