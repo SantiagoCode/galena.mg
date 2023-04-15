@@ -145,18 +145,19 @@ add_action( 'pre_get_posts', function( $query ){
     }
 } );
 
-add_action( 'wp_ajax_procesar_formulario', function(){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    var_dump($name);
-    var_dump($email);
-} );
+// add_action( 'wp_ajax_procesar_formulario', function(){
+//     var_dump( $_POST['nombre'] );
+// } );
 
 add_action( 'wp_ajax_nopriv_procesar_formulario', function(){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    var_dump("Name: " . $name);
-    var_dump("Email: " . $email);
+    // var_dump( $_POST['nombre'] );
+
+    $return = array(
+        'message'  => $_POST['name'],
+        'ID'       => 1
+    );
+    
+    wp_send_json($return);
 } );
 
 //the_breadcrumb

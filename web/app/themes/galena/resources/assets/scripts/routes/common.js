@@ -23,47 +23,28 @@ export default {
 
 
     // data submit
-    let btnSubmit = document.querySelector(".btnSubmit");
+          
+      let btnSubmit = document.querySelector(".btnSubmit");
+          
+      btnSubmit.addEventListener("click", (e) => {
+        e.preventDefault();        
+        
+        const form = document.querySelector("#newsletterForm");
+        let formData = new FormData(form);
+        formData.append( 'action', 'procesar_formulario' );
+            
+        fetch( window.location.origin + '/wp/wp-admin/admin-ajax.php', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: formData
+        })
+        .then(response => response.text()) 
+        .then(data => console.log(data)) 
+        .catch(err => console.log(err))
+      });
+         
 
-    const upload = (arg) => {
-    
-      // console.log("arg ",arg);
-      // console.log(arg["name"]);
-      // console.log(arg["email"]);
-
-      fetch('http://galena.v2.test/wp/wp-admin/admin-ajax.php', {
-        method: 'POST',
-        body: arg,
-        mode: 'no-cors',
-        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-      })
-      .then(response => {console.log(response)})
-      .catch(error => console.error(error))    
-    };
-
-    btnSubmit.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      const form = document.querySelector("#newsletterForm");
-      let data = new FormData(form);
-
-      // console.log("data ", data);
-      // console.log(data["name"]);
-      // console.log(data["email"]);
-
-
-      upload(data);
-    }); 
-    
-    
-    // a new effect (fade effect)    
-    // const miniImages = document.querySelectorAll("[data-switch]");
-    // miniImages.forEach(img => {
-    //   img.addEventListener("touchstart", (e) => {
-    //     console.log(e.target.attributes[0].nodeValue);
-    //   });
-    // });
-    
     },
     
 
