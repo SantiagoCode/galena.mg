@@ -150,14 +150,28 @@ add_action( 'pre_get_posts', function( $query ){
 // } );
 
 add_action( 'wp_ajax_nopriv_procesar_formulario', function(){
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    $post_id = wp_insert_post(array(
+        'post_title' => $name . " - " . $email,
+        'post_type' => 'contacts',
+    ));
+
+    update_post_meta($post_id, 'name', $name);
+    update_post_meta($post_id, 'email', $email);
+    
+
+
     // var_dump( $_POST['nombre'] );
 
-    $return = array(
-        'message'  => $_POST['name'],
-        'ID'       => 1
-    );
+    // $return = array(
+    //     'message'  => $_POST['name'],
+    //     'ID'       => 1
+    // );
     
-    wp_send_json($return);
+    // wp_send_json($return);
 } );
 
 //the_breadcrumb
